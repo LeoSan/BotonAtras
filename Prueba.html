@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pueba de boton Atras</title>
+    <script type="text/javascript">
+
+        function nobackbutton(){
+            window.location.hash="no-back-button";
+            window.location.hash="Again-No-back-button" //chrome
+            window.onhashchange=function(){window.location.hash="no-back-button";}
+        }
+    </script>
+
+</head>
+
+<body onload="nobackbutton();">
+
+
+<form name="prueba2" action="prueba2.html" method="POST"> 
+<table>
+	<tr>
+		<td>
+			Nombre
+		</td>
+		<td>
+			Apellido
+		</td>
+
+	</tr>
+	<tr>
+		<td>
+			<input type="text" name="name" id="name" />
+		</td>
+		<td>
+			<input type="text" name="apellido" id="apellido" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<input type="submit" value="Enviar">
+		</td>
+
+	</tr>
+
+
+
+</table>
+</form>
+
+</body>
+</html>
